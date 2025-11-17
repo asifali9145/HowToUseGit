@@ -12,7 +12,7 @@ It allows multiple developers to work on a project simultaneously, manage versio
 
 **2) git status:** it shows you the current state of your working directory and staging area.
 
-&nbsp; It helps you see:
+  It helps you see:
 
 \- Which files have been modified
 
@@ -56,13 +56,21 @@ Uses symbols to show the file state instead of sentences
 
 
 
+<<<<<<< Updated upstream
 **4-a) git add filename =>** Use to add a **single** **file** into **Staging Area** 
+=======
+**4-a) git add filename =>** Use to add a **single** **file** into **Staging Area**
+>>>>>>> Stashed changes
 
 **4-b) git add . =>** used to add **all files** into **Staging Area**
 
 
 
+<<<<<<< Updated upstream
 **5) git commit -m "comments"=>** used to add **comments** 
+=======
+**5) git commit -m "comments"=>** used to add **comments**
+>>>>>>> Stashed changes
 
 
 
@@ -80,6 +88,7 @@ So this **command** is basically saying: “Hey Git, connect my local folder wit
 
 **7) git remote -v => check** if you are **connected** to the **online repository**
 
+<<<<<<< Updated upstream
 	It will show something like: 
 
 &nbsp;	origin  https://github.com/YourUserName/YourRepoName.git (fetch)
@@ -91,6 +100,21 @@ So this **command** is basically saying: “Hey Git, connect my local folder wit
 &nbsp;  If you see the GitHub link → ✔ Your project is connected to GitHub.
 
 &nbsp;  If nothing shows → ❌ Not connected.
+=======
+It will show something like:
+
+
+
+ 	origin  https://github.com/YourUserName/YourRepoName.git (fetch)
+
+ 	origin  https://github.com/YourUserName/YourRepoName.git (push)
+
+
+
+   If you see the GitHub link → ✔ Your project is connected to GitHub.
+
+   If nothing shows → ❌ Not connected.
+>>>>>>> Stashed changes
 
 
 
@@ -108,6 +132,122 @@ So this **command** is basically saying: “Hey Git, connect my local folder wit
 * origin → remote repository
 * main → branch name
 
+<<<<<<< Updated upstream
+=======
+
+
+**10) git log => displays** **all the commits** that have been made in your **repository**/ **history of your project**.
+
+Each commit in Git has:
+
+* Who created it
+* When it was created
+* A unique commit ID (hash)
+* The commit message
+
+git log shows ALL of these.
+
+
+
+**Why is it useful?**
+
+Check what changes were made | See who made changes (in team projects) | Jump to old versions |
+
+Undo mistakes | Track your progress
+
+
+
+**10-a) git log** = full history
+
+**10-b) git log --oneline** = short history
+
+**10-c) git log --graph** => visual branch history
+
+
+
+**11-a) git config --global user.name "Your Name"** =>
+
+**11-b) git config --global user.email "your\_email@example.com"** =>
+
+
+
+**--global means:**
+
+This setting applies to all Git projects on your computer.
+
+
+
+| **Scope**      | **Command Example**                                  | **Applies to**           |
+
+| ---------- | ------------------------------------------------ | -------------------- |
+
+| \*\***Global**\*\* | `\\\*\\\*git config --global\\\*\\\* user.email "email"` | All projects         |
+
+| \*\***Local**\*\*  | `\\\*\\\*git config\\\*\\\* user.email "email"`          | Only current project |
+
+
+
+
+
+**12) git diff =>** This shows:
+
+* Files you edited
+* What exactly changed
+* What is not staged yet 
+
+
+
+**12-a) git diff --staged / git diff --cached**
+
+Both commands show the differences between:
+
+👉 your staged files (files added with git add)
+
+👉 your last commit (HEAD)
+
+
+
+**| Command                    | Purpose                |**
+
+**| -------------------------- | ---------------------- |**
+
+**| `git diff`                 | Unstaged changes       |**
+
+**| `git diff --staged`        | Staged changes         |**
+
+**| `git diff COMMIT1 COMMIT2` | Compare two commits    |**
+
+**| `git diff main test`       | Compare branches       |**
+
+**| `git diff filename.txt`    | Diff for a file        |**
+
+**| `git diff --name-only`     | Show changed filenames |**
+
+**| `git diff --stat`          | Summary of changes     |**
+
+
+
+**13) git reset**
+
+
+
+**| Command                    | What It Does                 | Safe?       |**
+
+**| -------------------------- | ---------------------------- | ----------- |**
+
+**| `git reset <file>`         | Unstage file                 | ✅ Safe      |**
+
+**| `git reset --soft HEAD~1`  | Undo commit, keep staged     | ✅ Safe      |**
+
+**| `git reset --mixed HEAD~1` | Undo commit, keep changes    | ✅ Safe      |**
+
+**| `git reset --hard HEAD~1`  | Undo commit \& delete changes | ❌ Dangerous |**
+
+
+
+
+
+>>>>>>> Stashed changes
 
 
 
