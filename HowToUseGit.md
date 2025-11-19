@@ -56,20 +56,30 @@ Uses symbols to show the file state instead of sentences
 
 
 
-<<<<<<< Updated upstream
-**4-a) git add filename =>** Use to add a **single** **file** into **Staging Area** 
-=======
 **4-a) git add filename =>** Use to add a **single** **file** into **Staging Area**
+
 >>>>>>> Stashed changes
 
 **4-b) git add . =>** used to add **all files** into **Staging Area**
 
+| Command          | Adds New Files | Adds Modified Files  | Adds Deleted Files | Notes                  |
+
+| ---------------- | -------------- | -------------------- | ------------------ | ---------------------- |
+
+| `git add .`      | ✔ Yes          | ✔ Yes               | ❌ No              | Most commonly used     |
+
+| `git add -A`     | ✔ Yes          | ✔ Yes               | ✔ Yes              | Add EVERYTHING         |
+
+| `git add -u`     | ❌ No          | ✔ Yes               | ✔ Yes              | No new files           |
+
+| `git add <file>` | ✔ Yes (single) | ✔ Yes (single)      | ✔ Yes (single)     | Target a specific file |
 
 
-<<<<<<< Updated upstream
-**5) git commit -m "comments"=>** used to add **comments** 
-=======
+
+
+
 **5) git commit -m "comments"=>** used to add **comments**
+
 >>>>>>> Stashed changes
 
 
@@ -88,19 +98,8 @@ So this **command** is basically saying: “Hey Git, connect my local folder wit
 
 **7) git remote -v => check** if you are **connected** to the **online repository**
 
-<<<<<<< Updated upstream
-	It will show something like: 
+   If you see the GitHub link → ✔ Your project is connected to GitHub.
 
-&nbsp;	origin  https://github.com/YourUserName/YourRepoName.git (fetch)
-
-&nbsp;	origin  https://github.com/YourUserName/YourRepoName.git (push)
-
-
-
-&nbsp;  If you see the GitHub link → ✔ Your project is connected to GitHub.
-
-&nbsp;  If nothing shows → ❌ Not connected.
-=======
 It will show something like:
 
 
@@ -114,7 +113,6 @@ It will show something like:
    If you see the GitHub link → ✔ Your project is connected to GitHub.
 
    If nothing shows → ❌ Not connected.
->>>>>>> Stashed changes
 
 
 
@@ -128,12 +126,10 @@ It will show something like:
 
 **9) git pull origin main =>** Download code from GitHub (get changes)
 
-* git push → push changes
+* git pull → pull changes
 * origin → remote repository
 * main → branch name
 
-<<<<<<< Updated upstream
-=======
 
 
 **10) git log => displays** **all the commits** that have been made in your **repository**/ **history of your project**.
@@ -177,13 +173,13 @@ This setting applies to all Git projects on your computer.
 
 
 
-| **Scope**      | **Command Example**                                  | **Applies to**           |
+| **Scope**      | **Command Example**                            | **Applies to**           |
 
-| ---------- | ------------------------------------------------ | -------------------- |
+| ---------- | ------------------------------------------ | -------------------- |
 
-| \*\***Global**\*\* | `\\\*\\\*git config --global\\\*\\\* user.email "email"` | All projects         |
+| \*\***Global**\*\* | git config --global user.email "email"`    | All projects         |
 
-| \*\***Local**\*\*  | `\\\*\\\*git config\\\*\\\* user.email "email"`          | Only current project |
+| \*\***Local**\*\*  | git config user.email "email"`             | Only current project |
 
 
 
@@ -193,7 +189,7 @@ This setting applies to all Git projects on your computer.
 
 * Files you edited
 * What exactly changed
-* What is not staged yet 
+* What is not staged yet
 
 
 
@@ -248,9 +244,4 @@ Both commands show the differences between:
 
 
 >>>>>>> Stashed changes
-
-
-
-
-
 
