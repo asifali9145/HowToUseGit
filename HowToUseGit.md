@@ -241,7 +241,35 @@ Both commands show the differences between:
 
 
 
+**14) git clone**
+
+**14-a) git clone repository-link =>** Creates a new folder and clones repository inside it.
+
+**14-b) git clone repository-link . =>**  Applying **Dot** . Clone the repository into the Current/Same folder.
 
 
->>>>>>> Stashed changes
+
+
+
+**15) Touch : touch is NOT a Git command.**
+
+    \*\*It is a Linux / Git Bash command used to create an empty file.\*\*
+
+
+
+**16) touch .gitignore =>** it create the empty gitignore file in the directory.
+
+ 			Inside .gitignore, you list folders or files Git should skip.
+
+**16-a) notepad .gitignore** => it open gitignore file with notepad application.
+
+
+
+**16-b) git rm --cached filename =>** To **stop tracking** an **already tracked file**.
+
+ 	because **.gitignore only ignores untracked files**. If a file is already tracked by Git,
+
+ 	.gitignore will NOT hide it.
+
+ 
 
