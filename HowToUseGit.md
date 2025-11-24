@@ -297,5 +297,33 @@ Both commands show the differences between:
 
 
 
- 
+**18) git merge <branch-name>**
+
+&nbsp;   For example we create loginSystem branch and add some feature now want to integrate into main 
+
+so first we run => git checkout main
+
+&nbsp;		=> git merge loginSystem
+
+this command add/merge the code return into loginSystem into main branch.
+
+
+
+**19-a) Delete a Local Branch**
+      Safe delete (only deletes if branch is already merged) **=> git branch -d branchName** 
+      Force delete (even if not merged) 			   **=> git branch -D branchName**
+
+**19-b) Delete a Remote Branch**
+      **=> git push origin --delete branchName**
+Force delete (even if not merged) 			   **=> git branch -D branchName**
+
+
+
+**20) How to verify deletion**
+
+&nbsp;	Check local branches => **git branch**
+
+ 	Check remote branches => **git branch -r**
+
+
 
