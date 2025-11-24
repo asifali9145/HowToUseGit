@@ -271,5 +271,31 @@ Both commands show the differences between:
 
  	.gitignore will NOT hide it.
 
+
+
+**17) Creating New Branch and their related commands.**
+
+| **Command**                             | **Meaning**                          |
+
+| ----------------------------------- | -------------------------------- |
+
+| git branch                          | List branches                    |
+
+| git branch newBranch                | Create branch                    |
+
+| git checkout branchName             | Switch branch                    |
+
+| git checkout -b newBranch           | Create + switch                  |
+
+| git merge branchName                | Merge branch into current branch |
+
+| git branch -d branchName            | Delete local branch              |
+
+| git push origin --delete branchName | Delete remote branch             |
+
+| git push -u origin branchName       | Publish branch to GitHub         |
+
+
+
  
 
