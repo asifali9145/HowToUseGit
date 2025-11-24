@@ -311,19 +311,17 @@ this command add/merge the code return into loginSystem into main branch.
 
 **19-a) Delete a Local Branch**
       Safe delete (only deletes if branch is already merged) **=> git branch -d branchName** 
-      Force delete (even if not merged) 			   **=> git branch -D branchName**
+      Force delete (even if not merged) 	             **=> git branch -D branchName**
 
 **19-b) Delete a Remote Branch**
       **=> git push origin --delete branchName**
-Force delete (even if not merged) 			   **=> git branch -D branchName**
-
 
 
 **20) How to verify deletion**
 
 &nbsp;	Check local branches => **git branch**
 
- 	Check remote branches => **git branch -r**
+ 	Check remo branches => **git branch -r**
 
 
 
